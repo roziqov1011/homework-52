@@ -1,0 +1,130 @@
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+.wrapper{
+  background-color: #eed3cf;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1100px;
+  height: 650px;
+  display: flex;
+  box-shadow: 0 30px 50px -20px rgb(114, 82, 82);
+}
+/* left */
+.left .img{
+  width: 366px;
+}
+.left .back{
+  display: flex;
+  text-transform: uppercase;
+  transform: translateY(-620px);
+  margin-left: 30px;
+  color: #7e7473;
+  font-weight: bold;
+}
+.left .back a{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #777;
+}
+.left .back a:hover{
+  color: black;
+  transition: all 0.5s;
+}
+
+/* right */
+.right{
+  background-color: #fff;
+  height: 650px;
+}
+
+.right .nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 466px;
+  transform: translateX(266px);
+  padding: 20px;
+}
+.nav a{
+  font-weight: bold;
+  color: rgb(133, 125, 125);
+  text-transform: uppercase;
+}
+.nav .aktiv{
+  color: black;
+}
+
+.nav a:hover{
+  color: black;
+  transition: all 0.5s;
+}
+
+.main{
+  margin-left: 110px;
+}
+.title{
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 70px;
+}
+.title h1{
+  font-size: 60px;
+  font-weight: lighter;
+  
+}
+.title span{
+  width: 200px;
+  height: 4px;
+  background-color: black;
+  transform: translateY(-70px);
+}
+.subtitle h4{
+  font-size: 22px;
+  margin-bottom: 40px;
+  font-weight: lighter;
+}
+
+/* block */
+
+.block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block .play{
+  margin-left: 70px;
+  transform: translateY(-90px);
+  padding: 12px;
+  background-color: rgba(255 , 255, 255, 0.5);
+  border-radius: 50%;
+}
+.block .all-foto{
+  margin-top: -50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.all-foto a{
+  color: #000;
+}
+
+.block-right{
+  width: 400px;
+  padding-right: 70px;
+  line-height: 30px;
+  font-size: 20px;
+}
