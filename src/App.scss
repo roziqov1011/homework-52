@@ -8,8 +8,15 @@
   list-style-type: none;
   text-decoration: none;
 }
-.wrapper{
+
+
+.light{
   background-color: #eed3cf;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.dark{
+  background-color: #445861;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -52,9 +59,9 @@
 
 .right .nav ul{
   display: flex;
-  justify-content: space-around;
-  width: 466px;
-  transform: translateX(266px);
+  justify-content: space-between;
+  width: 496px;
+  transform: translateX(236px);
   padding: 20px;
 }
 .nav a{

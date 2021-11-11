@@ -2,7 +2,7 @@ const content = {
      uz:{
             title:"Pastel shahriga tashrif",
             link:{
-                state1:"GOLLANDIYA",
+                state1:"NEDERLANDIYA",
                 state2:"ISPANIYA",
                 state3:"FRANSIYA",
             },

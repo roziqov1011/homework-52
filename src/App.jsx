@@ -11,15 +11,17 @@ import content from './assets/content';
 function App() {
 
   const [lang , setLang] = useState("uz")
+  const [color, setColor] = useState(
+    window.localStorage.getItem("theme") 
+    )
+    
+    const handelSetTheme = (e)=>{
+      setColor(e.target.value)
+      window.localStorage.setItem("theme", e.target.value)
+  }
   return (
     <>
-    
-
-
-
-    {/* ================= */}
-
-  <div className="wrapper">
+  <div className={color}>
     <div className="section">
       <div className="left">
         <img src={background} alt="background" class="img"/>
@@ -32,13 +34,12 @@ function App() {
       </div>
       <div className="right">
         <div className="nav">
-          
           <ul>
             <li><a href="/">{content[lang].link.state1}</a></li>
             <li><a href="/" class="aktiv">{content[lang].link.state2}</a></li>
             <li><a href="/">{content[lang].link.state3}</a></li>
             <li>
-            <select 
+            <select
                   defaultValue={lang}
                   onChange={
                     (evt)=>{
@@ -49,6 +50,12 @@ function App() {
                   <option value="en">EN</option>
                   <option value="ru">RU</option>
           </select>
+            </li>
+            <li>
+              <select onChange = {handelSetTheme}>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
             </li>
           </ul>
         </div>
@@ -77,7 +84,6 @@ function App() {
       </div>
     </div>
   </div>
-    {/* =============== */}
     </>
   );
 }
